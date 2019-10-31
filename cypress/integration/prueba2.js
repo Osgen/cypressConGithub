@@ -18,12 +18,12 @@ describe ('Issue #2: Agrega el campo teléfono en la tabla datos después del ca
         cy.get('.modal-footer > .btn-primary').click({force:true})
     })
 
-    it('Editar con el campo “Telefono”', function () {
-        cy.get(':nth-child(34) > :nth-child(5) > .btn-primary').click({force:true})
-        cy.get(':nth-child(2) > .col-md-11 > .form-control')
-            .type('Lazaro -Editado-').should('have.value','LagunaLazaro -Editado-')
-        cy.get(':nth-child(3) > .col-md-11 > .form-control')
-            .type('1233331').should('have.value','3121233331')
-        cy.get('.modal-footer > .btn-primary').click({force:true})
-    })
+    // it('Editar con el campo “Telefono”', function () {
+    //     cy.get(':nth-child(34) > :nth-child(5) > .btn-primary').click({force:true})
+    //     cy.get(':nth-child(2) > .col-md-11 > .form-control')
+    //         .type('Lazaro -Editado-').should('have.value','LagunaLazaro -Editado-')
+    //     cy.get(':nth-child(3) > .col-md-11 > .form-control')
+    //         .type('1233331').should('have.value','3121233331')
+    //     cy.get('.modal-footer > .btn-primary').click({force:true})
+    // })
 })
